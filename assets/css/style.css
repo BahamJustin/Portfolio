@@ -58,7 +58,7 @@ body {
 }
 
 main {
-  margin: 100px 150px 50px 150px;
+  margin: 50px 50px 50px 50px;
   align-items: flex-start;
 }
 
@@ -91,6 +91,13 @@ main {
   display: flex;
 }
 
+.content > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 10px;
+  border-right: 3px solid var(--body-color);
+}
+
 .content-title {
   padding: 0px 20px 0px 0px;
   border-right: 3px solid var(--body-color);
@@ -104,44 +111,39 @@ main {
   padding: 10px;
 }
 
-/* work images */
-.all-img {
-  display: flex;
+.content > div {
+  flex: 0 0 77%;
 }
 
 .content-img {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
   color: white;
+}
+
+.content-img a {
+  position: relative;
 }
 
 .content-img img {
-  max-width: 100%;
-  max-height: 100%;
-  border: 4px solid var(--secondary-color);
-  margin: 20px;
-}
-
-.small-img {
-  display: flex;
   position: relative;
-  color: white;
+  opacity: 65%;
+  width: 400px;
+  height: 200px;
+  border: 3px solid var(--secondary-color);
+  margin: 10px;
 }
 
-.small-img img {
-  max-width: 75%;
-  max-height: 75%;
-  border: 4px solid var(--secondary-color);
-  margin: 20px;
+.content-img img:hover {
+  opacity: 100%;
 }
 
 .img-text {
   position: absolute;
-  bottom: 50px;
-  left: 30px;
+  top: 65%;
   background-color: var(--secondary-color);
-  padding: 10px 10px 10px 25px;
   color: var(--primary-color);
+  margin: 0px 10px;
 }
 
 /* contact info */
@@ -159,4 +161,14 @@ main {
 .contact-info ul {
   list-style: none;
   display: flex;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+}
+
+/* Media query for Phones */
+@media screen and (max-width: 575px) {
 }
