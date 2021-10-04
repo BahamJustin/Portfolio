@@ -1,6 +1,6 @@
 # Portfolio
 
-<img src="C:\Users\baham\desktop\SCHOOL\gitrepo\Portfolio\assets\images\FullPageScreenshot.png" />
+![Screenshot](/assets/images/FullPageScreenshot.png)
 
 ## Built With
 
